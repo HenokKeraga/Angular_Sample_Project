@@ -1,10 +1,20 @@
-
-  <section class="item-container">
-    <p>Name : {{donor.donorName}}</p>
-    <p> Description : {{donor.donorDescription}}</p>
-    <p> Amount : {{donor.donorAmount}}</p>
-    <img [src]='donor.donorImageUrl'/>
-  </section>
+<mat-card class="item-container">
+  <mat-card-header>
+    <div mat-card-avatar ></div>
+    <mat-card-title>{{donor.donorName}}</mat-card-title>
+    <mat-card-subtitle>{{donor.donorAmount}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]='donor.donorImageUrl' >
+  <mat-card-content>
+    <p>
+      {{donor.donorDescription}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>
 
 
 

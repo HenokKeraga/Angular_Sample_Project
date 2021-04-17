@@ -1,17 +1,12 @@
-<!--<button mat-button [matMenuTriggerFor]="menu">Menu</button>-->
-<!--<mat-menu #menu="matMenu">-->
-<!--  <button mat-menu-item [routerLink]="['/donor']">Donor</button>-->
-<!--  <button mat-menu-item [routerLink]="['/item']">Donor Item</button>-->
-<!--</mat-menu>-->
 
-  <mat-toolbar color="primary">
+  <mat-toolbar color="primary" >
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
       <mat-icon>menu</mat-icon>
     </button>
 
     <button mat-button [routerLink]="['/']">
       <mat-icon>redeem</mat-icon>
-      <span>Donor</span>
+      <span class="logo">Donor</span>
     </button>
     <button mat-button [routerLink]="['/']">
       <span>Benefits</span>

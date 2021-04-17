@@ -1,1 +1,18 @@
-<app-donor></app-donor>
+<div fxLayout="column">
+  <div [ngStyle]="{'background-color':'green','height':'390px'}">
+    <div>
+      Raise Money For Anything
+    </div>
+    <div>
+
+    </div>
+  </div>
+
+  <div fxLayout="row" >
+    <div  fxHide.lt-md="true" [ngStyle.gt-sm]="{'width':'30%','background-color':'red'}">TRENDING NOW</div>
+    <app-donor></app-donor>
+  </div>
+
+</div>
+
+
