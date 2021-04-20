@@ -1,4 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
+import { DonorDto } from 'src/app/model/donorDto.model';
 import {DonorDataModel} from "../../../model/DonorData.model";
 
 @Component({
@@ -7,7 +8,7 @@ import {DonorDataModel} from "../../../model/DonorData.model";
   styleUrls: ['./donation-item.component.css']
 })
 export class DonationItemComponent implements OnInit {
-  @Input()donor:DonorDataModel
+  @Input()donor:DonorDto
 
   constructor() { }
 

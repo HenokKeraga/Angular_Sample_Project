@@ -1,13 +1,13 @@
 <mat-card class="item-container">
   <mat-card-header>
     <div mat-card-avatar ></div>
-    <mat-card-title>{{donor.donorName}}</mat-card-title>
-    <mat-card-subtitle>{{donor.donorAmount}}</mat-card-subtitle>
+    <mat-card-title>{{donor.name}}</mat-card-title>
+    <mat-card-subtitle>{{donor.amount}}</mat-card-subtitle>
   </mat-card-header>
-  <img mat-card-image [src]='donor.donorImageUrl' >
+  <img mat-card-image [src]='donor.imageUrl' >
   <mat-card-content>
     <p>
-      {{donor.donorDescription}}
+      {{donor.description}}
     </p>
   </mat-card-content>
   <mat-card-actions>
