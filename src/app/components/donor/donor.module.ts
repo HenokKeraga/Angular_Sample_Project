@@ -6,26 +6,30 @@ import {RouterModule, Routes} from "@angular/router";
 import {CommonModule} from "@angular/common";
 import {MaterialModule} from "../../material.module";
 import {FlexLayoutModule} from "@angular/flex-layout";
+import { DonorDialogComponent } from './donation-item/donation-detail/donor-dialog/donor-dialog.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 const routes: Routes = [
   {
     path: 'donor', component: DonorComponent,
   },
   {path: 'item', component: DonationItemComponent},
-  {path: 'detail', component: DonationDetailComponent}
+  {path: 'detail/:id', component: DonationDetailComponent}
 ]
 
 @NgModule({
   declarations: [
     DonorComponent,
     DonationItemComponent,
-    DonationDetailComponent
+    DonationDetailComponent,
+    DonorDialogComponent
   ],
   imports: [
     RouterModule.forChild(routes),
     CommonModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    ReactiveFormsModule
   ],
   exports: [
     DonorComponent

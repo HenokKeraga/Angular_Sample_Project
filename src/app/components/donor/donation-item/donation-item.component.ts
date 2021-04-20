@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import { DonorDto } from 'src/app/model/donorDto.model';
 import {DonorDataModel} from "../../../model/DonorData.model";
 
@@ -15,4 +15,7 @@ export class DonationItemComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onClick() {
+
+  }
 }

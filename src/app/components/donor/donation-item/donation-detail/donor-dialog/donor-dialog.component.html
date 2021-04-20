@@ -1,0 +1,29 @@
+<div fxLayout="column" fxLayoutAlign="center center" >
+  <img mat-card-image [src]="(data |async)?.imageUrl">
+  <div mat-dialog-content fxLayout="column" fxLayoutAlign="center center">
+    <h3 class=".mat-h3">Support My Campaign:</h3>
+    <h1 class="mat-h1">{{(data|async)?.name}}</h1>
+    <form [formGroup]="submitForm"  fxLayout="column" fxLayoutAlign="center center">
+      <mat-form-field class="example-full-width">
+        <input matInput formControlName="info" placeholder="add comment with your support (optional)">
+      </mat-form-field>
+      <section class="example-section">
+        <mat-checkbox class="example-margin" formControlName="owner">Send only campaign owner</mat-checkbox>
+        <mat-checkbox class="example-margin" formControlName="facebook">post to facebook</mat-checkbox>
+      </section>
+      <p>Supporting a campaign with your Facebook is one of the best</p>
+      <p>ways to help it succeed because over 30% of donations come </p>
+      <p>from social posts!</p>
+
+      <button mat-raised-button type="submit"  color="primary" >
+        <mat-icon>facebook</mat-icon>
+        Become A supporter
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
+
+
